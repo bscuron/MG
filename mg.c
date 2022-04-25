@@ -112,7 +112,7 @@ void findQuery(char* path){
     while(getline(&line, &size, fp) != -1){
         char* startPtr = strstr(line, query);
         if(startPtr != NULL){
-            printf("%s:%d:%lu:%s", path, row, startPtr - line, line);
+            printf("%s:%d:%lu:%s", path, row, startPtr - line + 1, line);
         }
         row++;
     }
