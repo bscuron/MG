@@ -64,7 +64,6 @@ void traverse(char* path){
     DIR* dir = opendir(path);
     if(!dir){
         fprintf(stderr, "ERROR: failed to open directory: %s.\n", path);
-        printf("Error %d \n", errno);
         return;
     }
 
