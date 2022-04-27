@@ -23,6 +23,7 @@ int main(int argc, char** argv){
     for(int i = 0; i < numPaths; i++){
         traverse(paths[i]);
     }
+    free(paths);
 }
 
 void parseArguments(int argc, char** argv){

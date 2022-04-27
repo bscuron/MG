@@ -1,2 +1,5 @@
+CC=gcc
+FLAGS=-Wall -Werror -O3
+
 mg:
-	gcc -o mg mg -Wall -Werror
+	$(CC) -o mg mg.c $(FLAGS)
