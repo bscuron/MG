@@ -18,6 +18,8 @@ int numPaths = 0;
 
 int main(int argc, char** argv){
     parseArguments(argc, argv);
+
+    // traverse the paths
     for(int i = 0; i < numPaths; i++){
         traverse(paths[i]);
     }
